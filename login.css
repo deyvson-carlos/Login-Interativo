@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+body{
+    font-family: arial, sans-serif;
+    background-image: url(../img/e1ec4d7ee6db2b2dde5bc911ee32a9d7.jpg);
+}
+
+/* editando fontes e logo */
+img#logo01{
+    width: 200px;
+    margin-left: 80%;
+    margin-top: -90px;
+}
+
+h1{
+font-family: 'fontelogo', sans-serif;
+font-size: 30pt;
+color: black;
+text-shadow: 1px 1px 1px white;
+padding: 0px;
+margin-bottom: 0px;
+margin-top: 15px;
+}
+
+h2 {
+font-family: 'fontelogo', sans-serif;
+color: rgba(0, 0, 0, 0.363); 
+font-size: 15pt;
+padding: 0px;
+margin-top: 0px;
+    }
+/* fim do editando fontes e logo */
+
+/* editando formulario */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+/* zerando o css */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* fim do zerando css */
+
+/* configurando a primeira parte */
+body  {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    left: 0;
+
+}
+
+/* configurando fomtes */
+.title{
+    
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-welcome{
+    color: #fff;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
+}
+
+.description-primary{
+    color: #fff;
+}
+
+.description-second{
+    color: #7f8c8d;
+}
+
+/* fim de configurando fontes */
+
+/* configurando os botões */
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    align-self: center;
+    border-width: 0px;
+}
+
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid  #fff;
+    
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    color: #58af9b;
+}
+
+.btn-second{
+    background-color: #58af9b;
+    border: 1 px solid #58af9b;
+    transition: background-color .5s;
+}
+
+.btn-second:hover{
+    background-color: #fff;
+    border: 1px solid #58af9b;
+    color: #58af9b;
+}
+/* fim de  configurando os botões */
+
+.first-content{
+    display: flex;
+}
+
+.first-content .second-column{
+  z-index: 12;  
+}
+
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+
+.item-social-media  {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+}
+
+.social-media{
+    margin: 1rem 0;
+}
+
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+
+.link-social-media:hover .item-social-media{
+background-color: #58af9b;
+color: #fff;
+border-color: #58af9b;
+
+}
+
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height:45px ;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+   
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+
+.second-content{
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+
+
+.title-second{
+    color: #58af9b;
+}
+
+.password{
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter{
+    text-transform: capitalize;
+}
+
+/* invertendo as telas */
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column{
+ z-index: -1;
+}
+
+.sign-in-js .second-content .first-column,
+.sign-in-js .second-content .second-column {
+z-index: 12;
+}
+
+.sign-in-js .content::before{
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 3s;
+    z-index: 12;
+
+}
+
+.sign-up-js .content::before {
+    animation: slideout 3s;
+    z-index: 13;
+}
+
+
+
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{
+z-index: -1;
+}
+
+.sign-up-js .first-content .second-column{
+z-index: 12;
+}
+
+.sign-up-js .first-content .first-column{
+    z-index: 14;
+}
+
+/* deslocamento atrás do content:before */
+.sign-in-js .first-content .second-column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 3s;
+}
+
+.sign-up-js .second-content .second-column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoDir 3s;
+}
+
+
+/* animação css */
+
+@keyframes deslocamentoDir {
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 13;
+    }
+
+    25%{
+        left: 80px;
+        opacity: .5;
+    }
+
+    50%{
+        left: 100px;
+        opacity: .2;
+   }
+
+    to {
+        left: 110px;
+        z-index: -1;
+        opacity: 0;
+
+    }
+
+    }
+
+
+
+
+
+@keyframes deslocamentoEsq {
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+
+    50%{
+        left: -100px;
+        opacity: .2;
+   }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+
+    }
+
+    }
+
+
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+
+    }
+
+25%{
+    left: 5%;
+    width: 50%;
+}
+
+50%{   
+left: 25%;
+width: 60%;
+}
+
+75%{
+left: 45%;
+width: 50%;
+}
+
+to {
+left: 60%;
+width: 40%;
+}
+
+}
+
+
+@keyframes slideout {
+    from {
+        left: 60;
+        width: 40%;
+
+    }
+
+25%{
+    left: 45%;
+    width: 50%;
+}
+
+50%{   
+left: 25%;
+width: 60%;
+}
+
+75%{
+left: 5%;
+width: 50%;
+}
+
+to {
+left: 0%;
+width: 40%;
+}
+
+}
+/* fim do editando formulario */
+
+/* rodape */
+footer#rodape {
+    clear: both;
+    border-top: 1px solid black ;
+    }
+        
+    footer#rodape p {
+    text-align: center;
+    }
+    
+    img.icons{
+        width: 30px;
+        height: 30%;
+        padding: 2px;
+    }
+    /* fim do rodape */
